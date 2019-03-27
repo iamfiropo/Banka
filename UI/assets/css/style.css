@@ -1,0 +1,130 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    background-color: #21ba45;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-family: -apple-system, 
+    BlinkMacSystemFont, 
+    "Oxygen",
+    "Ubuntu", 
+    sans-serif;
+    font-size: .8em;
+    line-height: 1.6em;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-family: -apple-system, 
+    BlinkMacSystemFont, 
+    "Oxygen",
+    "Ubuntu", 
+    sans-serif;
+    text-align: center;
+}
+
+/************************
+    Sign Up Page 
+    ********************/
+header {
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+}
+
+header .header-brand {
+    font-family: -apple-system, 
+    BlinkMacSystemFont, 
+    "Oxygen",
+    "Ubuntu", 
+    sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    height: 100px;
+    color: #111;
+    display: block;
+    padding-left: 20px;
+    position: absolute;
+}
+
+header nav a img {
+    float: right;
+    width: 60px;
+    height: 80px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+/* For Desktops */
+@media only screen and (min-width: 768px){
+    
+    header .header-brand {
+        padding-left: 100px;
+    }
+
+    header nav a img {
+        padding-right: 100px;
+    }
+}
+
+/* For Tablets */
+@media only screen and (min-width : 600px){
+
+}
+
+.input-form {
+    padding: 10px;
+    height: calc(80vh - 100px);
+    margin: 20px;
+    background-color: #fff;
+}
+
+input {
+    display: block;
+    border: none;
+    border-bottom: 2px solid #21ba45;
+    font-size: 10px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.signup-btn {
+    margin-top: 35px;    
+    border: none;
+    background-color: #21ba45;
+    cursor: pointer;
+    border-radius: 85px;
+}
+
+.input-section p {
+    margin-top: 35px;
+}
+
+/* For Desktops */
+@media only screen and (min-width: 768px){
+
+
+    .input-form {
+        height: calc(150vh - 100px);
+        margin: 100px;
+    }
+
+    .input-form input {
+        font-size: 20px;
+    }
+}
+
+footer {
+    padding: 30px 30px;
+    margin: 0 auto;
+}
