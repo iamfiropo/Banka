@@ -9,7 +9,7 @@ body {
     margin: 0;
 }
 
-p {
+p, a {
     font-family: -apple-system, 
     BlinkMacSystemFont, 
     "Oxygen",
@@ -17,7 +17,14 @@ p {
     sans-serif;
     font-size: .8em;
     line-height: 1.6em;
-    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 ul {
@@ -77,11 +84,6 @@ header nav a img {
     }
 }
 
-/* For Tablets */
-@media only screen and (min-width : 600px){
-
-}
-
 .input-form {
     padding: 10px;
     height: calc(80vh - 100px);
@@ -89,7 +91,7 @@ header nav a img {
     background-color: #fff;
 }
 
-input {
+.input-form input {
     display: block;
     border: none;
     border-bottom: 2px solid #21ba45;
@@ -98,7 +100,11 @@ input {
     margin: 0 auto;
 }
 
-.signup-btn {
+.input-form .first-name-input {
+    padding-top: 50px;
+}
+
+.input-form .signup-btn {
     margin-top: 35px;    
     border: none;
     background-color: #21ba45;
@@ -108,11 +114,11 @@ input {
 
 .input-section p {
     margin-top: 35px;
+    text-align: center;
 }
 
 /* For Desktops */
 @media only screen and (min-width: 768px){
-
 
     .input-form {
         height: calc(150vh - 100px);
@@ -124,7 +130,43 @@ input {
     }
 }
 
+/* For Tablets */
+@media only screen and (min-width : 600px){
+    .input-form .first-name-input {
+        padding-top: 50px;
+    }
+}
+
 footer {
     padding: 30px 30px;
     margin: 0 auto;
+    text-align: center;
+}
+
+/************************
+    Login Page 
+    ********************/
+
+.input-form .email-address-input {
+    padding-top: 100px;
+}
+
+.input-form .login-btn {
+    margin-top: 35px;    
+    border: none;
+    background-color: #21ba45;
+    cursor: pointer;
+    border-radius: 85px;
+}
+
+.input-section .reset-password {
+    text-align: center;
+    display: block;
+}
+
+/* For Tablets */
+@media only screen and (min-width : 600px){
+    .input-form .email-address-input {
+        padding-top: 150px;
+    }
 }
