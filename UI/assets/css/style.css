@@ -101,11 +101,11 @@ header nav a img {
 @media only screen and (min-width : 600px){
     header .header-brand {
         /* font-size: 22px; */
-        margin: 0 0 0 80px;
+        /* margin: 0 0 0 80px; */
     }
 
     header nav a img {
-        margin-right: 80px;
+        /* margin-right: 80px; */
     }
 }
 
@@ -199,9 +199,6 @@ footer {
 
 /* For Tablets */
 @media only screen and (min-width : 600px){
-    /* .input-form .email-address-input {
-        margin-top: 150px;
-    } */
 }
 
 /********************************
@@ -223,8 +220,6 @@ footer {
 @media only screen and (min-width : 600px){
     label {
         display: inline-block;
-        /* margin: 40px 80px; */
-        /* margin-left: 200px; */
         width: fit-content;
     }
 
