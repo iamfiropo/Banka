@@ -10,6 +10,13 @@ body {
     /* overflow: hidden; */
 }
 
+input[type="submit"] {  
+    border: none;
+    background-color: #21ba45;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
 label {
     display: inline-block;
     margin: 0 0 35px 40px;
@@ -43,7 +50,7 @@ ul {
     list-style-type: none;
 }
 
-h1 {
+h1, h2 {
     font-family: -apple-system, 
     BlinkMacSystemFont, 
     "Oxygen",
@@ -131,11 +138,7 @@ header nav a img {
 }
 
 .input-form .signup-btn {
-    margin-top: 35px;    
-    border: none;
-    background-color: #21ba45;
-    cursor: pointer;
-    border-radius: 25px;
+    margin-top: 35px;  
 }
 
 .input-section p {
@@ -185,11 +188,12 @@ footer {
 }
 
 .input-form .login-btn {
-    margin-top: 35px;    
-    border: none;
-    background-color: #21ba45;
-    cursor: pointer;
-    border-radius: 25px;
+    margin-top: 35px;   
+}
+
+.input-form a[href="resetpassword.html"] {
+    display: block;
+    text-align: center;
 }
 
 .input-section .reset-password {
@@ -199,6 +203,8 @@ footer {
 
 /* For Tablets */
 @media only screen and (min-width : 600px){
+
+    
 }
 
 /********************************
@@ -208,14 +214,6 @@ footer {
  .account-type {
     margin-top: 35px; 
  }
-
-.input-form .account-btn {
-    /* margin-top: 35px;     */
-    border: none;
-    background-color: #21ba45;
-    cursor: pointer;
-    border-radius: 25px;
-}
 
 @media only screen and (min-width : 600px){
     label {
@@ -231,4 +229,12 @@ footer {
         width: 70px;
         margin: 0 auto;
     }
+}
+
+/************************
+    Reset Password Page 
+ ************************/
+
+ .input-form .reset-password-btn {
+    margin-top: 35px;  
 }
