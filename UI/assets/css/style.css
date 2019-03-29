@@ -7,9 +7,21 @@ body {
     height: 100%;
     padding: 0;
     margin: 0;
+    /* overflow: hidden; */
 }
 
-p, a {
+label {
+    display: inline-block;
+    margin: 0 0 35px 40px;
+    width: 60px;
+}
+
+select {
+    width: 70px;
+    margin: 0 auto;
+}
+
+p, a, label, option {
     font-family: -apple-system, 
     BlinkMacSystemFont, 
     "Oxygen",
@@ -42,7 +54,7 @@ h1 {
 
 /************************
     Sign Up Page 
-    ********************/
+ ************************/
 header {
     background-color: #fff;
     width: 100%;
@@ -55,12 +67,12 @@ header .header-brand {
     "Oxygen",
     "Ubuntu", 
     sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     text-decoration: none;
     height: 100px;
     color: #111;
     display: block;
-    padding-left: 20px;
+    margin-left: 80px;
     position: absolute;
 }
 
@@ -68,26 +80,39 @@ header nav a img {
     float: right;
     width: 60px;
     height: 80px;
-    padding-right: 20px;
-    padding-top: 10px;
+    margin-right: 80px;
+    margin-top: 10px;
 }
 
 /* For Desktops */
 @media only screen and (min-width: 768px){
     
     header .header-brand {
-        padding-left: 100px;
+        margin: 0 0 0 200px;
+        font-size: 24px;
     }
 
     header nav a img {
-        padding-right: 100px;
+        margin-right: 200px;
+    }
+}
+
+/* For Tablets */
+@media only screen and (min-width : 600px){
+    header .header-brand {
+        /* font-size: 22px; */
+        margin: 0 0 0 80px;
+    }
+
+    header nav a img {
+        margin-right: 80px;
     }
 }
 
 .input-form {
-    padding: 10px;
-    height: calc(80vh - 100px);
-    margin: 20px;
+    padding-top: 10px;
+    height: calc(100vh - 100px);
+    margin: 40px 80px;
     background-color: #fff;
 }
 
@@ -98,10 +123,11 @@ header nav a img {
     font-size: 10px;
     padding: 15px;
     margin: 0 auto;
+    outline: 0;
 }
 
 .input-form .first-name-input {
-    padding-top: 50px;
+    margin-top: 50px;    
 }
 
 .input-form .signup-btn {
@@ -109,7 +135,7 @@ header nav a img {
     border: none;
     background-color: #21ba45;
     cursor: pointer;
-    border-radius: 85px;
+    border-radius: 25px;
 }
 
 .input-section p {
@@ -122,7 +148,7 @@ header nav a img {
 
     .input-form {
         height: calc(150vh - 100px);
-        margin: 100px;
+        margin: 100px 600px;
     }
 
     .input-form input {
@@ -132,12 +158,19 @@ header nav a img {
 
 /* For Tablets */
 @media only screen and (min-width : 600px){
+
+    .input-form {
+        height: calc(100vh - 100px);
+        margin: 100px 200px;
+    }
+
     .input-form .first-name-input {
-        padding-top: 50px;
+        margin-top: 50px;
     }
 }
 
 footer {
+    width: fit-content;
     padding: 30px 30px;
     margin: 0 auto;
     text-align: center;
@@ -145,10 +178,10 @@ footer {
 
 /************************
     Login Page 
-    ********************/
+ ************************/
 
 .input-form .email-address-input {
-    padding-top: 100px;
+    margin-top: 100px;
 }
 
 .input-form .login-btn {
@@ -156,7 +189,7 @@ footer {
     border: none;
     background-color: #21ba45;
     cursor: pointer;
-    border-radius: 85px;
+    border-radius: 25px;
 }
 
 .input-section .reset-password {
@@ -166,7 +199,41 @@ footer {
 
 /* For Tablets */
 @media only screen and (min-width : 600px){
-    .input-form .email-address-input {
-        padding-top: 150px;
+    /* .input-form .email-address-input {
+        margin-top: 150px;
+    } */
+}
+
+/********************************
+    Bank Account Creation Page 
+ ********************************/
+ 
+ .account-type {
+    margin-top: 35px; 
+ }
+
+.input-form .account-btn {
+    /* margin-top: 35px;     */
+    border: none;
+    background-color: #21ba45;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+@media only screen and (min-width : 600px){
+    label {
+        display: inline-block;
+        /* margin: 40px 80px; */
+        /* margin-left: 200px; */
+        width: fit-content;
+    }
+
+    .type {        
+        margin-left: 300px;
+    }
+    
+    select {
+        width: 70px;
+        margin: 0 auto;
     }
 }

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Sign Up | BANKA</title>
+        <title>Account Opening | BANKA</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/style.css" />
     </head>
@@ -21,11 +21,21 @@
                         <input type="text" class="first-name-input" placeholder="First name" required>
                         <input type="text" placeholder="Last name" required>
                         <input type="email" placeholder="Email address" required>
-                        <input type="password" placeholder="Password" required>
-                        <input type="password" placeholder="Confirm password" required>
-                        <input type="submit" class="signup-btn" value="Sign Up">
-
-                        <p>Already registered? <a href="login.html">Sign in</a></p>                        
+                        <input type="tel" placeholder="Mobile number" required>
+                        <div class="dropdown">
+                            <label class="type" for="type">Type:</label> 
+                                <select class="account-type" name="type">
+                                    <option>Savings</option>
+                                    <option>Current</option>
+                                </select>
+                            <label for="sex">Sex:</label> 
+                                <select class="select-sex" name="sex">
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                        </div>
+                        <input type="submit" class="account-btn" value="Continue">  
+                        <p>Only a user can open an account! <a href="signup.html">Sign up</a></p>                   
                     </form>
                 </section>                
             </div>
