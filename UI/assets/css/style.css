@@ -238,3 +238,15 @@ footer {
  .input-form .reset-password-btn {
     margin-top: 35px;  
 }
+
+/********************************
+    Credit User Account Page 
+ ********************************/
+
+ .input-form .account-number-input {
+    margin-top: 100px;
+}
+
+ .input-form .credit-btn {
+    margin-top: 35px;  
+}
