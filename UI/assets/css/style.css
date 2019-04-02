@@ -246,14 +246,6 @@ footer {
     }
 }
 
-/************************
-    Reset Password Page 
- ************************/
-
- .input-form .reset-password-btn {
-    margin-top: 35px;  
-}
-
 /**************************************************
     Staff and Admin User Account Creation Page 
  **************************************************/
@@ -270,6 +262,7 @@ footer {
     width: 100%;
     height: 120px;
     background-color: white;
+    border-bottom: 30px solid #21ba45
  }
 
 .main-content {
@@ -357,6 +350,29 @@ footer {
 }
 
 .debit .debit-btn {
+    margin-top: 25px;
+}
+
+/************************
+    Reset Password Page 
+ ************************/
+
+ .reset {
+    padding: 20px;
+    width: 40%;
+}
+
+.reset input {
+    display: block;
+    border: none;
+    border-bottom: 2px solid #21ba45;
+    font-size: 10px;
+    padding: 15px;
+    margin: 0 auto;
+    outline: 0;
+}
+
+.reset .reset-password-btn {
     margin-top: 25px;
 }
 
