@@ -254,26 +254,6 @@ footer {
     margin-top: 35px;  
 }
 
-/********************************
-    Credit User Account Page 
- ********************************/
-
- .input-form .account-number-input {
-    margin-top: 100px;
-}
-
- .input-form .credit-btn {
-    margin-top: 35px;  
-}
-
-/********************************
-    Debit User Account Page 
- ********************************/
-
- .input-form .debit-btn {
-    margin-top: 35px;  
-}
-
 /**************************************************
     Staff and Admin User Account Creation Page 
  **************************************************/
@@ -282,9 +262,9 @@ footer {
     margin-top: 25px;  
 }
 
-/*************************************
-    Add User Account - Staff Account 
- *************************************/
+/*************************
+    Admin Dashboard 
+ *************************/
 
  .admin-header {
     width: 100%;
@@ -335,6 +315,48 @@ footer {
 }
 
 .adduser .staff-account-btn {
+    margin-top: 25px;
+}
+
+/*************************
+    Staff Dashboard 
+ *************************/
+
+ .credit {
+    padding: 20px;
+    width: 40%;
+}
+
+.credit input {
+    display: block;
+    border: none;
+    border-bottom: 2px solid #21ba45;
+    font-size: 10px;
+    padding: 15px;
+    margin: 0 auto;
+    outline: 0;
+}
+
+.credit .credit-btn {
+    margin-top: 25px;
+}
+
+.debit {
+    padding: 20px;
+    width: 40%;
+}
+
+.debit input {
+    display: block;
+    border: none;
+    border-bottom: 2px solid #21ba45;
+    font-size: 10px;
+    padding: 15px;
+    margin: 0 auto;
+    outline: 0;
+}
+
+.debit .debit-btn {
     margin-top: 25px;
 }
 
