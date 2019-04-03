@@ -206,7 +206,7 @@ footer {
     margin-top: 35px;   
 }
 
-.input-form a[href="resetpassword.html"] {
+.input-form a[href="reset.html"] {
     display: block;
     text-align: center;
 }
@@ -310,6 +310,14 @@ footer {
 .adduser .staff-account-btn {
     margin-top: 25px;
 }
+
+/*************************
+    Staff Login 
+ *************************/
+
+ .input-form .staff-login-btn {
+     margin-top: 35px;
+ }
 
 /*************************
     Staff Dashboard 
