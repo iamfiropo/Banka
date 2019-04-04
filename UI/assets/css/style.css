@@ -64,7 +64,7 @@ ul {
     list-style-type: none;
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
     font-family: -apple-system, 
     BlinkMacSystemFont, 
     "Oxygen",
@@ -323,6 +323,20 @@ footer {
     Staff Dashboard 
  *************************/
 
+.hidden-lg {
+    display: none !important;
+} 
+
+ @media only screen and (min-width: 768px){
+    .hidden-sm {
+        display: none;
+        visibility: hidden !important;
+    }  
+    .hidden-lg {
+        display: block !important;
+    }  
+}
+
  .credit {
     padding: 20px;
     width: 40%;
@@ -361,6 +375,12 @@ footer {
     margin-top: 25px;
 }
 
+@media only screen and (min-width: 768px){
+    .mymodal .modal-content { 
+        max-width: 60vh;
+    }    
+}
+
 /************************
     Reset Password Page 
  ************************/
@@ -383,17 +403,62 @@ footer {
 .reset .reset-password-btn {
     margin-top: 25px;
 }
-
-/* .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+.mymodal {
+	background-color: rgba(0,0,0,0.95);
+	color: #fff;
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 20px;
+	z-index: 999;
+}
+.mymodal .modal-content { 
+	height: 100%;
+	max-width: 40vh;
+	padding-top: 12vh;
+	margin: 0 auto;
+	position: relative;
+}
+.mymodal .actionbtn {
+	display: flex;
+	justify-content: space-between;
+    padding-top: 8vh;        
 }
 
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-} */
+.mymodal header {
+        background-color: #4F4D53 !important; 
+        padding-top: 20px;
+}
+
+.mymodal button {
+    background-color: #21ba45;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 16px;
+    padding: 10px 40px;
+}
+.mymodal .close {
+	position: relative;
+	right: 0;
+	top: 0;
+	padding: 0px 28px 8px;
+	font-size: 4em;
+	width: auto;
+	height: auto;
+	background: transparent;
+	border: 0;
+	outline: none;
+	color: #ffffff;
+	z-index: 1000;
+	font-weight: 100;
+	line-height: 1;
+}
+
+@media only screen and (min-width: 768px){
+    .mymodal .modal-content { 
+        max-width: 60vh;
+    }    
+}

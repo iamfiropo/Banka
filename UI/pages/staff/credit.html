@@ -15,14 +15,26 @@
                 </nav>                  
         </header>
         <main class="main-content">
-            <div class="sidebar">
-                <ul>
-                    <li><a href="dashboard.html">Staff Dashboard</a></li>
-                    <li><a href="transactions.html">Transactions</a></li>
-                    <li><a href="userstatus.html">Activate or deactivate user account</a></li>
-                    <li><a href="userbankaccount.html">List of Bank accounts</a></li>
-                </ul>
-            </div>
+            <div class="mymodal">
+                    <button class="close" onclick="openModal(false)">&times;</button>
+                    <div class="modal-content">
+                        <header>
+                            <h2>Select transaction type:</h2>
+                        </header>
+                        <div class="actionbtn">
+                            <a href="credit.html"><button class="button">Credit</button></a>
+                            <a href="debit.html"><button class="button">Debit</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="dashboard.html">Staff Dashboard</a></li>
+                        <li onclick="openModal(true)"><a href="#">Transactions</a></li>
+                        <li><a href="userstatus.html">Activate or deactivate user account</a></li>
+                        <li><a href="userbankaccount.html">List of Bank accounts</a></li>
+                    </ul>
+                </div>
             <section class="content">
                 <article>
                     <div class="credit">
@@ -38,5 +50,6 @@
             <p>&copy; 2019 BANKA - ADC Cycle 43</p>
         </footer>
         </div>
+        <script src="../../assets/js/script.js"></script>
     </body>
 </html>
