@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: #21ba45;
+    background-color: #21ba43;
     height: 100%;
     padding: 0;
     margin: 0;
@@ -12,23 +12,41 @@ body {
 
 input[type="submit"] {  
     border: none;
-    background-color: #21ba45;
+    background-color: #21ba43;
     cursor: pointer;
     border-radius: 25px;
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+button {
+    border: none;
+    background-color: #21ba43;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    border-bottom: 1px solid #000;
+}
+
+.hidden-lg {
+    display: none !important;
+} 
+
+ @media only screen and (min-width: 768px){
+    .hidden-sm {
+        display: none;
+        visibility: hidden !important;
+    }  
+    .hidden-lg {
+        display: block !important;
+    }  
+}
+
+a {
+    color:#000;
 }
 
 label {
@@ -118,18 +136,6 @@ header nav a img {
     }
 }
 
-/* For Tablets */
-@media only screen and (min-width : 600px){
-    header .header-brand {
-        /* font-size: 22px; */
-        /* margin: 0 0 0 80px; */
-    }
-
-    header nav a img {
-        /* margin-right: 80px; */
-    }
-}
-
 .input-form {
     padding-top: 10px;
     height: calc(100vh - 100px);
@@ -140,7 +146,7 @@ header nav a img {
 .input-form input {
     display: block;
     border: none;
-    border-bottom: 2px solid #21ba45;
+    border-bottom: 2px solid #21ba43;
     font-size: 10px;
     padding: 15px;
     margin: 0 auto;
@@ -261,8 +267,8 @@ footer {
  .admin-header {
     width: 100%;
     height: 120px;
-    background-color: white;
-    border-bottom: 30px solid #21ba45
+    background-color: #fff;
+    border-bottom: 30px solid #21ba43
  }
 
 .main-content {
@@ -272,7 +278,7 @@ footer {
 .sidebar{
     flex: 1;
     height: 680px;
-    background-color: #21ba45;
+    background-color: #21ba43;
 }
 
 .sidebar ul li{
@@ -300,7 +306,7 @@ footer {
 .adduser input {
     display: block;
     border: none;
-    border-bottom: 2px solid #21ba45;
+    border-bottom: 2px solid #21ba43;
     font-size: 10px;
     padding: 15px;
     margin: 0 auto;
@@ -323,20 +329,6 @@ footer {
     Staff Dashboard 
  *************************/
 
-.hidden-lg {
-    display: none !important;
-} 
-
- @media only screen and (min-width: 768px){
-    .hidden-sm {
-        display: none;
-        visibility: hidden !important;
-    }  
-    .hidden-lg {
-        display: block !important;
-    }  
-}
-
  .credit {
     padding: 20px;
     width: 40%;
@@ -345,7 +337,7 @@ footer {
 .credit input {
     display: block;
     border: none;
-    border-bottom: 2px solid #21ba45;
+    border-bottom: 2px solid #21ba43;
     font-size: 10px;
     padding: 15px;
     margin: 0 auto;
@@ -364,7 +356,7 @@ footer {
 .debit input {
     display: block;
     border: none;
-    border-bottom: 2px solid #21ba45;
+    border-bottom: 2px solid #21ba43;
     font-size: 10px;
     padding: 15px;
     margin: 0 auto;
@@ -393,7 +385,7 @@ footer {
 .reset input {
     display: block;
     border: none;
-    border-bottom: 2px solid #21ba45;
+    border-bottom: 2px solid #21ba43;
     font-size: 10px;
     padding: 15px;
     margin: 0 auto;
@@ -434,7 +426,7 @@ footer {
 }
 
 .mymodal button {
-    background-color: #21ba45;
+    background-color: #21ba43;
 	border-radius: 3px;
 	cursor: pointer;
 	font-size: 16px;
@@ -461,4 +453,33 @@ footer {
     .mymodal .modal-content { 
         max-width: 60vh;
     }    
+}
+
+/************************
+    Transactions page 
+ ************************/
+ /* h4 ul {
+    display: block;
+} */
+
+.transactions {
+    /* background-color: lightgrey; */
+    width: 90%;
+    text-align: left;
+    margin: 20px;
+}
+
+.transactions td {
+    padding-top: 10px;
+    font-weight: normal;
+}
+
+.transactions th, .transactions td {
+    padding-right: 35px;
+}
+
+@media only screen and (min-width: 768px){
+    .transactions {
+        width: 400px;
+    }
 }
