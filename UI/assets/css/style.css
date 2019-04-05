@@ -458,9 +458,6 @@ footer {
 /************************
     Transactions page 
  ************************/
- /* h4 ul {
-    display: block;
-} */
 
 .transactions {
     /* background-color: lightgrey; */
@@ -482,4 +479,13 @@ footer {
     .transactions {
         width: 400px;
     }
+}
+
+.transaction {
+    width: 50%;
+    padding: 20px;
+}
+
+.transaction h3 {
+    text-align: left;
 }
