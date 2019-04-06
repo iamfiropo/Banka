@@ -459,33 +459,33 @@ footer {
     Transactions page 
  ************************/
 
-.transactions {
+.all-table {
     /* background-color: lightgrey; */
     width: 90%;
     text-align: left;
     margin: 20px;
 }
 
-.transactions td {
+.all-table td {
     padding-top: 10px;
     font-weight: normal;
 }
 
-.transactions th, .transactions td {
+.all-table th, .all-table td {
     padding-right: 35px;
 }
 
 @media only screen and (min-width: 768px){
-    .transactions {
+    .all-table {
         width: 400px;
     }
 }
 
-.transaction {
+.specific {
     width: 50%;
     padding: 20px;
 }
 
-.transaction h3 {
+.specific h3 {
     text-align: left;
 }
