@@ -21,6 +21,8 @@ button {
     border: none;
     background-color: #21ba43;
     cursor: pointer;
+    outline: 0;
+    
 }
 
 table {
@@ -298,11 +300,6 @@ footer {
     font-weight: bold;
 }
 
-.adduser {
-    padding: 20px;
-    width: 40%;
-}
-
 .adduser input {
     display: block;
     border: none;
@@ -498,4 +495,26 @@ footer {
     border: none;
     font-size: 10px;
     padding: 15px;
+}
+
+.activatebtn {
+    background-color: #21ba43;
+    margin-top: 25px; 
+    display: inline-block;
+    font-size: 10px;
+    padding: 15px;
+    border-radius: 25px;
+    outline: 0;
+}
+
+.spanform {
+    display: inline-block;
+}
+
+.adduserbtn {
+    margin-top: 25px; 
+    display: inline-block;
+    font-size: 10px;
+    padding: 15px;
+    border-radius: 25px;
 }

@@ -22,8 +22,12 @@
                         <h2>Select transaction type:</h2>
                     </header>
                     <div class="actionbtn">
-                        <a href="credit.html"><button class="button">Credit</button></a>
-                        <a href="debit.html"><button class="button">Debit</button></a>
+                        <form class="spanform" action="credit.html">
+                            <button class="button">Credit</button>
+                        </form>
+                        <form class="spanform" action="debit.html">
+                            <button class="button">Debit</button>
+                        </form> 
                     </div>
                 </div>
             </div>
@@ -31,23 +35,19 @@
                 <ul>
                     <li><a href="dashboard.html">Staff Dashboard</a></li>
                     <li onclick="openModal(true)"><a href="#">Transactions</a></li>
-                    <li><a href="userstatus.html">Activate or deactivate user account</a></li>
                     <li><a href="userbankaccount.html">List of Bank accounts</a></li>
                 </ul>
             </div>
             <section class="content">
-                <article>
-                    <div class="staffdashboard">
-                        <h2 class="hidden-lg">Welcome to BANKA Staff(Non-Admin) Dashboard</h2>
-                        <h4 class="hidden-sm">Welcome to BANKA Staff(Non-Admin) Dashboard</h4>
-                    </div>
-                </article>
+                <div class="staffdashboard">
+                    <h2 class="hidden-lg">Welcome to BANKA Staff(Non-Admin) Dashboard</h2>
+                    <h4 class="hidden-sm">Welcome to BANKA Staff(Non-Admin) Dashboard</h4>
+                </div>
             </section>  
         </main>
         <footer class="footer-section">
             <p>&copy; 2019 BANKA - ADC Cycle 43</p>
         </footer>
-        <!-- </div> -->
         <script src="../../assets/js/script.js"></script>
     </body>
 </html>

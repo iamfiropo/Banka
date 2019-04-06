@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Users | BANKA</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" media="screen" href="../../../assets/css/style.css" />
+    </head>
+    <body>
+        <header class="admin-header">
+            <a href="#" class="header-brand"><h1>BANKA</h1></a>
+                <nav class="navbar">
+                        <a href="#"><img src="../../../assets/images/bank.svg" alt="nav icon"></a>
+                </nav>                  
+        </header>
+        <main class="main-content">
+            <div class="sidebar">
+                <ul>
+                    <li><a href="dashboard.html">Admin Dashboard</a></li>
+                    <li><a href="userstatus.html">Activate or deactivate user account</a></li>
+                    <li><a href="../userbankaccount.html">List of Bank accounts</a></li>
+                    <li><a href="users.html">Users</a></li>
+                </ul>
+            </div>
+            <section class="content">
+                <div class="all-table">
+                    <div>
+                        <input type="button" onclick="status()" value="Activate" id="activatebtn" class="activatebtn">
+                       <form class="spanform" action="adduser.html">
+                           <button class="adduserbtn">Add User</button>
+                        </form> 
+                        <h3>USERS</h3>
+                    </div>
+                        <table>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <th>ID</th>
+                                <th>Username</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>1</td>
+                                <td>John peace</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>2</td>
+                                <td>Tafa Balewa</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>3</td>
+                                <td>Joshua peak</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>4</td>
+                                <td>Suzan peach</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                    <td><input type="checkbox"></td>
+                                <td>5</td>
+                                <td>Amsterdam rush</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+            </section>  
+        </main>
+        <footer class="footer-section">
+            <p>&copy; 2019 BANKA - ADC Cycle 43</p>
+        </footer>
+        <script src="../../../assets/js/script.js"></script>
+    </body>
+</html>
