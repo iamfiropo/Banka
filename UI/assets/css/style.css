@@ -7,7 +7,7 @@ body {
     height: 100%;
     padding: 0;
     margin: 0;
-    /* overflow: hidden; */
+    width: 100%;
 }
 
 input[type="submit"] {  
@@ -16,6 +16,10 @@ input[type="submit"] {
     cursor: pointer;
     border-radius: 25px;
 }
+
+/* nav ul {
+    list-style:none;
+} */
 
 button {
     border: none;
@@ -116,6 +120,11 @@ header .header-brand {
     margin-left: 80px;
     position: absolute;
 }
+
+/* nav {
+    display: flex;
+    justify-content: space-between;
+} */
 
 header nav a img {
     float: right;
@@ -518,3 +527,113 @@ footer {
     padding: 15px;
     border-radius: 25px;
 }
+
+
+.index-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* margin-top: -16px; */
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+    padding-top: 20px;
+}
+
+.index-header ul a {
+    font-family: -apple-system, 
+    BlinkMacSystemFont, 
+    "Oxygen",
+    "Ubuntu", 
+    sans-serif;
+    font-size: 15px;
+}
+
+.index-header a:hover, .admin-header a:visited, .admin-header a:active {
+    text-decoration: none;
+}
+
+.index-brand {
+    flex-direction: row;
+    text-decoration: none;
+    font-family: -apple-system, 
+    BlinkMacSystemFont, 
+    "Oxygen",
+    "Ubuntu", 
+    sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    height: 100px;
+    color: #111;
+    /* display: block; */
+    margin-left: 10px;
+    /* position: absolute; */
+    /* text-align: center; */
+}
+
+.index-navbar a:hover{
+    border-bottom: 2px solid #1e8498;
+}
+
+.index-navbar ul {
+    /* display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: 20px; */
+
+    display: flex;
+    justify-content: center;
+    /* margin: auto; */
+    /* list-style-type: none; */
+}
+
+.index-navbar ul li {
+    /* display: inline-block; */
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+@media only screen and (min-width: 768px){
+    .index-header {
+        flex-direction: row;
+        justify-content: space-between space-around;
+    }
+
+    .index-header ul a {
+        font-size: 20px;
+    }
+
+    .index-brand {
+        justify-content: center;
+    }
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 360px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner h2 {
+    color: #fff;
+}
+
+@media only screen and (min-width: 768px){
+    .banner {
+        height: 460px;
+    }
+}
+
+.index-footer {
+    width: 100%;
+    /* padding: 30px 30px; */
+    height: calc(100% - 460px);
+    margin: 0 auto;
+    /* text-align: center; */
+    background-color: white;
+}
+
