@@ -1,9 +1,11 @@
 // transaction type modal
-const modal = document.querySelector(".mymodal");
-function openModal(bool){
-    bool ? modal.style.display = "block"
-    : modal.style.display = 'none';
-}
+const modal = document.querySelector('.mymodal');
+
+const openModal = bool => ({ bool ? modal.style.display = 'block' : modal.style.display = 'none' })
+// function openModal(bool){
+//     bool ? modal.style.display = 'block'
+//     : modal.style.display = 'none';
+// }
 
 //user status toggle
 activatebtn = document.querySelector('.activatebtn');
