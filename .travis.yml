@@ -1,4 +1,10 @@
-language: bash
+language: node_js
+node_js:
+  - "iojs"
+  - "7"
+script:
+  - babel-node server.js &
+  - npm run test
 
 branches:
   only:
