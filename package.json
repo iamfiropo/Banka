@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "NODE_ENV=TEST nyc mocha --require @babel/register ./test/*.spec.js --exit || true",
-    "start:dev": "DEBUG=http nodemon --exec babel-node server.js",
+    "start": "DEBUG=http nodemon --exec babel-node server.js",
     "serve": "node server.js"
   },
   "repository": {
