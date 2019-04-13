@@ -4,8 +4,9 @@
   "description": "[![Build Status](https://travis-ci.com/Johnpeace/Banka.svg?branch=develop)](https://travis-ci.com/Johnpeace/Banka)",
   "main": "server.js",
   "scripts": {
+    "heroku-prebuild": "NPM_CONFIG_PRODUCTION=false",
     "test": "NODE_ENV=TEST nyc mocha --require @babel/register ./test/*.spec.js --exit || true",
-    "start:dev": "DEBUG=http nodemon --exec babel-node server.js",
+    "start": "DEBUG=http nodemon --exec babel-node server.js",
     "serve": "node server.js"
   },
   "repository": {
@@ -40,6 +41,10 @@
     "mocha": "^6.1.2",
     "morgan": "^1.9.1",
     "nodemon": "^1.18.11",
-    "nyc": "^13.3.0"
+    "nyc": "^13.3.0",
+    "terser": "^3.17.0"
+  },
+  "engines": {
+    "node": "8.10.0"
   }
 }
