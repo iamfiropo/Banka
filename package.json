@@ -5,7 +5,6 @@
   "main": "server.js",
   "scripts": {
     "heroku-prebuild": "NPM_CONFIG_PRODUCTION=false",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run build --prefix server.js",
     "test": "NODE_ENV=TEST nyc mocha --require @babel/register ./test/*.spec.js --exit || true",
     "start": "DEBUG=http nodemon --exec babel-node server.js",
     "serve": "node server.js"
