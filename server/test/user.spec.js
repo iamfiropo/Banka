@@ -1,6 +1,7 @@
 import chaiHttp from 'chai-http';
 import chai, { expect } from 'chai';
-import server from '../server';
+import server from '../../server';
+// import { users } from '../utils/dummyData';
 
 chai.use(chaiHttp);
 
@@ -12,8 +13,14 @@ describe('Testing signup controller', () => {
       chai.request(server)
         .post(signupUrl)
         .send({
-          firstName: 'ropo',
-          lastName: 'olatujoye',
+          // email: 'morris@gmail.com',
+          // firstName: 'Morris',
+          // lastName: 'Iwu',
+          // password: 'password',
+          // type: 'staff',
+          // isAdmin: true,
+          firstName: 'mike',
+          lastName: 'umanah',
           email: 'test@test.com',
           password: 'password',
           confirmPassword: 'password',
@@ -21,8 +28,8 @@ describe('Testing signup controller', () => {
 
         .end((error, response) => {
           expect(response.body).to.be.an('object');
-          expect(response).to.have.status(201);
-          expect(response.body.status).to.equal(201);
+          expect(response).to.have.status(200);
+          expect(response.body.status).to.equal(200);
           expect(response.body.data).to.be.a('object');
           expect(response.body.data).to.have.property('token');
           expect(response.body.data).to.have.property('id');

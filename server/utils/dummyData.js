@@ -1,0 +1,58 @@
+const users = [
+  {
+    id: 1,
+    email: 'princeolatjohnjoe@yahoo.com',
+    firstName: 'Peace',
+    lastName: 'Olowo',
+    password: 'password',
+    type: 'admin',
+    isAdmin: true,
+  },
+  {
+    id: 2,
+    email: 'kate@yahoo.com',
+    firstName: 'Kate',
+    lastName: 'Henshaw',
+    password: 'password',
+    type: 'staff',
+    isAdmin: false,
+  },
+  {
+    id: 3,
+    email: 'ola@mum.com',
+    firstName: 'Ola',
+    lastName: 'Paris',
+    password: 'password',
+    type: 'user',
+    isAdmin: true,
+  },
+  {
+    id: 4,
+    email: 'brubbeck@itagi.com',
+    firstName: 'Brubbeck',
+    lastName: 'Jone',
+    password: 'password',
+    type: 'admin',
+    isAdmin: false,
+  },
+  {
+    id: 5,
+    email: 'morris@gmail.com',
+    firstName: 'Morris',
+    lastName: 'Iwu',
+    password: 'password',
+    type: 'staff',
+    isAdmin: true,
+  },
+  {
+    id: 6,
+    email: 'padd@gmail.com',
+    firstName: 'Padd',
+    lastName: 'Mouse',
+    password: 'password',
+    type: 'user',
+    isAdmin: true,
+  },
+];
+
+export default users;

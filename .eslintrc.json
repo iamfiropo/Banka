@@ -5,5 +5,10 @@
     "es6": true,
     "mocha": true,
     "node": true
-    }
+    },
+    "rules": {
+        "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.js"]}],
+        "no-param-reassign": 0
+      }
+    
 }
