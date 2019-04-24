@@ -3,51 +3,77 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Staff Dashboard | BANKA</title>
+        <title>Dashboard | BANKA</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" media="screen" href="../../assets/css/style.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="../../assets/css/style.css"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="../../assets/css/dashboard.css"/>
     </head>
     <body>
-        <header class="admin-header">
-            <a href="../index.html" class="header-brand"><h1>BANKA</h1></a>
-                <nav class="navbar">
-                        <a href="#"><img src="../../assets/images/bank.svg" alt="nav icon"></a>
-                </nav>                  
+        <header>            
+            <nav>
+                <a href="../index.html" class="brand">BANKA</a>
+            </nav>
         </header>
-        <main class="main-content"> 
-            <div class="mymodal">
-                <button class="close" onclick="openModal(false)">&times;</button>
-                <div class="modal-content">
-                    <header>
-                        <h2>Select transaction type:</h2>
-                    </header>
-                    <div class="actionbtn">
-                        <form class="spanform" action="credit.html">
-                            <button class="button">Credit</button>
-                        </form>
-                        <form class="spanform" action="debit.html">
-                            <button class="button">Debit</button>
-                        </form> 
-                    </div>
-                </div>
-            </div>
-            <div class="sidebar">
-                <ul>
-                    <li><a href="dashboard.html">Staff Dashboard</a></li>
-                    <li onclick="openModal(true)"><a href="#">Transactions</a></li>
-                    <li><a href="userbankaccount.html">List of Bank accounts</a></li>
-                </ul>
-            </div>
-            <section class="content">
-                <div class="staffdashboard">
-                    <h2 class="hidden-lg">Welcome to BANKA Staff(Non-Admin) Dashboard</h2>
-                    <h4 class="hidden-sm">Welcome to BANKA Staff(Non-Admin) Dashboard</h4>
-                </div>
-            </section>  
+        <main>
+            <article>
+                <h1>WELCOME TO THE STAFF DASHBOARD</h1>
+                <section>
+                    <h2>BANK ACCOUNT STATEMENT</h2>
+                    <p><strong>BALANCE: &#x20A6;58987</strong></p>
+                    <div>
+                        <table>
+                            <tr>
+                            <th>Id</th>
+                            <th>Account No</th>
+                            <th>Date Created</th>
+                            <th>Owner</th>
+                            <th>Account Type</th>
+                            <th>Account Status</th>
+                            <th>Balance &#x20A6;</th>
+                            </tr>
+                            <tr>
+                            <td>01</td>
+                            <td>0987654321</td>
+                            <td>24/5/2016</td>
+                            <td>BA001</td>
+                            <td>Savings</td>
+                            <td>Draft</td>
+                            <td>5000</td>
+                            </tr>
+                            <tr>
+                            <td>02</td>
+                            <td>0987454321</td>
+                            <td>24/5/2018</td>
+                            <td>BA002</td>
+                            <td>Current</td>
+                            <td>Active</td>
+                            <td>75000</td>
+                            </tr>
+                            <tr>
+                            <td>03</td>
+                            <td>088884321</td>
+                            <td>15/5/2017</td>
+                            <td>BA003</td>
+                            <td>Savings</td>
+                            <td>Dormant</td>
+                            <td>78000</td>
+                            </tr>
+                            <tr>
+                            <td>04</td>
+                            <td>090984321</td>
+                            <td>30/1/2019</td>
+                            <td>BA004</td>
+                            <td>Savings</td>
+                            <td>Draft</td>
+                            <td>335000</td>
+                            </tr>
+                        </table>
+                        </div>
+                </section>
+            </article>
         </main>
-        <footer class="footer-section">
+        <footer>
             <p>&copy; 2019 BANKA - ADC Cycle 43</p>
         </footer>
-        <script src="../../assets/js/script.js"></script>
     </body>
 </html>

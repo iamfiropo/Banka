@@ -3,36 +3,43 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Sign Up | BANKA</title>
+        <title>SignUp | BANKA</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" media="screen" href="../../assets/css/style.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="../../assets/css/style.css"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="../../assets/css/main.css"/>
     </head>
     <body>
-        <header>
-            <a href="../index.html" class="header-brand"><h1>BANKA</h1></a>
-            <nav class="navbar">
-                <a href="#"><img src="../../assets/images/bank.svg" alt="nav icon"></a>
-            </nav>           
+        <header>            
+            <nav>
+                <a href="../index.html" class="brand">BANKA</a>
+                <a href="login.html" class="navlink">Login</a>
+            </nav>
         </header>
         <main>
-            <div class="container">
-                <section class="input-section">
-                    <h2>SIGN UP</h2>
-                    <form class="input-form">
-                        <input type="text" class="first-name-input" placeholder="First name" required>
-                        <input type="text" placeholder="Last name" required>
-                        <input type="email" placeholder="Email address" required>
-                        <input type="password" placeholder="Password" required>
-                        <input type="password" placeholder="Confirm password" required>
-                        <input type="submit" class="signup-btn" value="Continue">
+            <section class="banner">
+                <h2>SIGN UP</h2>
+            </section>
+            <section class="form-section">
+                <form class="form" action="accountopening.html">
+                    <label for="first-name-input">First name:</label>
+                    <input type="text" id="first-name-input" class="first-name-input" placeholder="First name" required>
+                    
+                    <label for="last-name-input">Last name:</label>
+                    <input type="text" id="last-name-input" placeholder="Last name" required>
 
-                        <p>Already registered? <a href="login.html">Sign in</a></p>                        
-                    </form>
-                </section>                
-            </div>
+                    <label for="email-address-input">Email address:</label>
+                    <input type="email" id="email-address-input" placeholder="Password" required>
 
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Password" required>
+
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" placeholder="Password" required>
+                    <input type="submit" class="signup-btn" value="SIGN UP">                      
+                </form>
+            </section>
         </main>
-        <footer class="footer-section">
+        <footer>
             <p>&copy; 2019 BANKA - ADC Cycle 43</p>
         </footer>
     </body>

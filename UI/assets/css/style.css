@@ -1,639 +1,150 @@
-html {
-    min-height: 100%;
-}
-
-body {
-    background-color: #21ba43;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-}
-
-input[type="submit"] {  
-    border: none;
-    background-color: #21ba43;
-    cursor: pointer;
-    border-radius: 25px;
-}
-
-/* nav ul {
-    list-style:none;
-} */
-
-button {
-    border: none;
-    background-color: #21ba43;
-    cursor: pointer;
-    outline: 0;
-    
-}
-
-table {
-    border-collapse: collapse;
-}
-
-th {
-    border-bottom: 1px solid #000;
-}
-
-.hidden-lg {
-    display: none !important;
-} 
-
- @media only screen and (min-width: 768px){
-    .hidden-sm {
-        display: none;
-        visibility: hidden !important;
-    }  
-    .hidden-lg {
-        display: block !important;
-    }  
-}
-
-a {
-    color:#000;
-}
-
-label {
-    display: inline-block;
-    margin: 0 0 35px 40px;
-    width: 60px;
-}
-
-select {
-    width: 70px;
-    margin: 0 auto;
-}
-
-p, a, label, option {
+/* Added Richard Clark Browser Reset Stylesheet
+    to my environment styling for common UX on all browsers
+*/
+html, body, div, span, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ abbr, address, cite, code,
+ del, dfn, em, img, ins, kbd, q, samp,
+ small, strong, sub, sup, var,
+ b, i,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, figcaption, figure,
+ footer, header, hgroup, menu, nav, section, summary,
+ time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
     font-family: -apple-system, 
     BlinkMacSystemFont, 
     "Oxygen",
     "Ubuntu", 
     sans-serif;
-    font-size: .8em;
-    line-height: 1.6em;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-ul {
-    list-style-type: none;
-}
-
-h1, h2, h3, h4 {
+ } 
+article, aside, details, figcaption, figure,
+ footer, header, hgroup, menu, nav, section {
+     display:block;
+ }
+ nav ul {
+     list-style:none;
+ }
+ blockquote, q {
+     quotes:none;
+ }
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+     content:'';
+     content:none;
+ }
+ a {
     font-family: -apple-system, 
     BlinkMacSystemFont, 
     "Oxygen",
     "Ubuntu", 
     sans-serif;
-    text-align: center;
+     margin:0;
+     padding:0;
+     font-size:100%;
+     vertical-align:baseline;
+     background:transparent;
+     text-decoration: none;     
+ }
+ /* change colours to suit your needs */
+ ins {
+     background-color:#ff9;
+     color:#000;
+     text-decoration:none;
+ }
+ /* change colours to suit your needs */
+ mark {
+     background-color:#ff9;
+     color:#000;
+     font-style:italic;
+     font-weight:bold;
+ }
+ del {
+     text-decoration: line-through;
+ }
+ abbr[title], dfn[title] {
+     border-bottom:1px dotted;
+     cursor:help;
+ }
+ table {
+     border-collapse:collapse;
+     border-spacing:0;
+ }
+ /* change border colour to suit your needs */
+ hr {
+     display:block;
+     height:1px;
+     border:0;
+     border-top:1px solid #cccccc;
+     margin:1em 0;
+     padding:0;
+ }
+ input, select {
+     vertical-align:middle;
+ }
+ body {
+    line-height:1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;       
+    overflow: hidden;
 }
-
-/************************
-    Sign Up Page 
- ************************/
 header {
-    background-color: #fff;
     width: 100%;
-    height: 100px;
+    box-shadow: 2px 2px 8px;
 }
-
-header .header-brand {
-    font-family: -apple-system, 
-    BlinkMacSystemFont, 
-    "Oxygen",
-    "Ubuntu", 
-    sans-serif;
-    font-size: 20px;
-    text-decoration: none;
-    height: 100px;
-    color: #111;
-    display: block;
-    margin-left: 80px;
-    position: absolute;
+header nav {
+   display: flex;
 }
-
-/* nav {
-    display: flex;
-    justify-content: space-between;
-} */
-
-header nav a img {
-    float: right;
-    width: 60px;
-    height: 80px;
-    margin-right: 80px;
-    margin-top: 10px;
+header nav a:hover, header nav a:visited, header nav a:active {
+   text-decoration: none;
+   background: none;
+   color: inherit;
 }
-
-/* For Desktops */
-@media only screen and (min-width: 768px){
-    
-    header .header-brand {
-        margin: 0 0 0 200px;
-        font-size: 24px;
-    }
-
-    header nav a img {
-        margin-right: 200px;
-    }
+header nav .brand {
+   font-size: 30px;
+   margin: 25px 20px;
+   font-weight: bold;
 }
-
-.input-form {
-    padding-top: 10px;
-    height: calc(100vh - 100px);
-    margin: 40px 80px;
-    background-color: #fff;
+main {
+   display: flex;
 }
-
-.input-form input {
-    display: block;
-    border: none;
-    border-bottom: 2px solid #21ba43;
-    font-size: 10px;
-    padding: 15px;
-    margin: 0 auto;
-    outline: 0;
+main .banner {
+    background-color: #5DBCD2;
 }
-
-.input-form .first-name-input {
-    margin-top: 50px;    
-}
-
-.input-form .signup-btn {
-    margin-top: 35px;  
-}
-
-.input-section p {
-    margin-top: 35px;
+main .banner h2 {
+    margin-top: 60px;
     text-align: center;
-}
-
-/* For Desktops */
-@media only screen and (min-width: 768px){
-
-    .input-form {
-        height: calc(150vh - 100px);
-        margin: 100px 600px;
-    }
-
-    .input-form input {
-        font-size: 20px;
-    }
-}
-
-/* For Tablets */
-@media only screen and (min-width : 600px){
-
-    .input-form {
-        height: calc(100vh - 100px);
-        margin: 100px 200px;
-    }
-
-    .input-form .first-name-input {
-        margin-top: 50px;
-    }
-}
-
-footer {
-    width: 100%;
-    padding: 30px 30px;
-    margin: 0 auto;
-    text-align: center;
-    background-color: white;
-}
-
-/************************
-    Login Page 
- ************************/
-
-.input-form .email-address-input {
-    margin-top: 100px;
-}
-
-.input-form .login-btn {
-    margin-top: 35px;   
-}
-
-.input-form a[href="reset.html"] {
-    display: block;
-    text-align: center;
-}
-
-.input-section .reset-password {
-    text-align: center;
-    display: block;
-}
-
-/* For Tablets */
-@media only screen and (min-width : 600px){
-
-    
-}
-
-/********************************
-    Bank Account Creation Page 
- ********************************/
- 
- .account-type {
-    margin-top: 35px; 
- }
-
-@media only screen and (min-width : 600px){
-    label {
-        display: inline-block;
-        width: fit-content;
-    }
-
-    .type {        
-        margin-left: 300px;
-    }
-    
-    select {
-        width: 70px;
-        margin: 0 auto;
-    }
-}
-
-/**************************************************
-    Staff and Admin User Account Creation Page 
- **************************************************/
-
- .input-form .staff-account-btn {
-    margin-top: 25px;  
-}
-
-/*************************
-    Admin Dashboard 
- *************************/
-
- .admin-header {
-    width: 100%;
-    height: 120px;
-    background-color: #fff;
-    border-bottom: 30px solid #21ba43
- }
-
-.main-content {
-    display: flex;
-}
-
-.sidebar{
-    flex: 1;
-    height: 680px;
-    background-color: #21ba43;
-}
-
-.sidebar ul li{
-    padding: 20px;
-    border-bottom: 2px solid black;
-}
-
-.sidebar ul li:hover {
-    background-color: grey;
-}
-
-.content {
-    flex: 4;
-    height: 550px;
-    background-color: white;
-    font-size: 20px;
+    font-size: 34px;
     font-weight: bold;
+    color: #fff;
+    text-shadow: 8px 8px 16px #111;
 }
-
-.adduser input {
-    display: block;
-    border: none;
-    border-bottom: 2px solid #21ba43;
-    font-size: 10px;
-    padding: 15px;
-    margin: 0 auto;
-    outline: 0;
-}
-
-.adduser .staff-account-btn {
-    margin-top: 25px;
-}
-
-/*************************
-    Staff Login 
- *************************/
-
- .input-form .staff-login-btn {
-     margin-top: 35px;
- }
-
-/*************************
-    Staff Dashboard 
- *************************/
-
- .credit {
-    padding: 20px;
-    width: 40%;
-}
-
-.credit input {
-    display: block;
-    border: none;
-    border-bottom: 2px solid #21ba43;
-    font-size: 10px;
-    padding: 15px;
-    margin: 0 auto;
-    outline: 0;
-}
-
-.credit .credit-btn {
-    margin-top: 25px;
-}
-
-.debit {
-    padding: 20px;
-    width: 40%;
-}
-
-.debit input {
-    display: block;
-    border: none;
-    border-bottom: 2px solid #21ba43;
-    font-size: 10px;
-    padding: 15px;
-    margin: 0 auto;
-    outline: 0;
-}
-
-.debit .debit-btn {
-    margin-top: 25px;
-}
-
-@media only screen and (min-width: 768px){
-    .mymodal .modal-content { 
-        max-width: 60vh;
-    }    
-}
-
-/************************
-    Reset Password Page 
- ************************/
-
- .reset {
-    padding: 20px;
-    width: 40%;
-}
-
-.reset input {
-    display: block;
-    border: none;
-    border-bottom: 2px solid #21ba43;
-    font-size: 10px;
-    padding: 15px;
-    margin: 0 auto;
-    outline: 0;
-}
-
-.reset .reset-password-btn {
-    margin-top: 25px;
-}
-.mymodal {
-	background-color: rgba(0,0,0,0.95);
-	color: #fff;
-	display: none;
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	padding: 20px;
-	z-index: 999;
-}
-.mymodal .modal-content { 
-	height: 100%;
-	max-width: 40vh;
-	padding-top: 12vh;
-	margin: 0 auto;
-	position: relative;
-}
-.mymodal .actionbtn {
-	display: flex;
-	justify-content: space-between;
-    padding-top: 8vh;        
-}
-
-.mymodal header {
-        background-color: #4F4D53 !important; 
-        padding-top: 20px;
-}
-
-.mymodal button {
-    background-color: #21ba43;
-	border-radius: 3px;
-	cursor: pointer;
-	font-size: 16px;
-    padding: 10px 40px;
-}
-.mymodal .close {
-	position: relative;
-	right: 0;
-	top: 0;
-	padding: 0px 28px 8px;
-	font-size: 4em;
-	width: auto;
-	height: auto;
-	background: transparent;
-	border: 0;
-	outline: none;
-	color: #ffffff;
-	z-index: 1000;
-	font-weight: 100;
-	line-height: 1;
-}
-
-@media only screen and (min-width: 768px){
-    .mymodal .modal-content { 
-        max-width: 60vh;
-    }    
-}
-
-/************************
-    Transactions page 
- ************************/
-
-.all-table {
-    /* background-color: lightgrey; */
-    width: 90%;
-    text-align: left;
-    margin: 20px;
-}
-
-.all-table td {
-    padding-top: 10px;
-    font-weight: normal;
-}
-
-.all-table th, .all-table td {
-    padding-right: 35px;
-}
-
-@media only screen and (min-width: 768px){
-    .all-table {
-        width: 400px;
-    }
-}
-
-.specific {
-    width: 50%;
-    padding: 20px;
-}
-
-.specific h3 {
-    text-align: left;
-}
-
-.deletebtn {
-    margin-top: 25px; 
-    border-radius: 25px;
-    background-color: red;
-    display: block;
-    border: none;
-    font-size: 10px;
-    padding: 15px;
-}
-
-.activatebtn {
-    background-color: #21ba43;
-    margin-top: 25px; 
-    display: inline-block;
-    font-size: 10px;
-    padding: 15px;
-    border-radius: 25px;
-    outline: 0;
-}
-
-.spanform {
-    display: inline-block;
-}
-
-.adduserbtn {
-    margin-top: 25px; 
-    display: inline-block;
-    font-size: 10px;
-    padding: 15px;
-    border-radius: 25px;
-}
-
-
-.index-header {
+main .form-section {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    /* margin-top: -16px; */
-    background-color: #fff;
-    width: 100%;
-    height: 100px;
-    padding-top: 20px;
-}
-
-.index-header ul a {
-    font-family: -apple-system, 
-    BlinkMacSystemFont, 
-    "Oxygen",
-    "Ubuntu", 
-    sans-serif;
-    font-size: 15px;
-}
-
-.index-header a:hover, .admin-header a:visited, .admin-header a:active {
-    text-decoration: none;
-}
-
-.index-brand {
-    flex-direction: row;
-    text-decoration: none;
-    font-family: -apple-system, 
-    BlinkMacSystemFont, 
-    "Oxygen",
-    "Ubuntu", 
-    sans-serif;
-    font-size: 20px;
-    text-decoration: none;
-    height: 100px;
-    color: #111;
-    /* display: block; */
-    margin-left: 10px;
-    /* position: absolute; */
-    /* text-align: center; */
-}
-
-.index-navbar a:hover{
-    border-bottom: 2px solid #1e8498;
-}
-
-.index-navbar ul {
-    /* display: block;
-    width: fit-content;
     margin: 0 auto;
-    padding-top: 20px; */
-
+    align-items: center;
+}
+main .form {
     display: flex;
-    justify-content: center;
-    /* margin: auto; */
-    /* list-style-type: none; */
 }
-
-.index-navbar ul li {
-    /* display: inline-block; */
-    padding: 10px;
-    justify-content: space-evenly;
+main .form label {
+    margin-bottom: 10px;
 }
-
-@media only screen and (min-width: 768px){
-    .index-header {
-        flex-direction: row;
-        justify-content: space-between space-around;
-    }
-
-    .index-header ul a {
-        font-size: 20px;
-    }
-
-    .index-brand {
-        justify-content: center;
-    }
+main .form input {
+    outline: 0;
 }
-
-.banner {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 360px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
+footer {
+    text-align: center;
+    background-color: #5DBCD2;
+    box-shadow: 2px 2px 8px;
 }
-
-.banner h2 {
-    color: #fff;
-}
-
-@media only screen and (min-width: 768px){
-    .banner {
-        height: 460px;
-    }
-}
-
-.index-footer {
-    width: 100%;
-    /* padding: 30px 30px; */
-    height: calc(100% - 460px);
-    margin: 0 auto;
-    /* text-align: center; */
-    background-color: white;
-}
-
