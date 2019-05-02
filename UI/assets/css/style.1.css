@@ -95,54 +95,35 @@ article, aside, details, figcaption, figure,
     overflow: hidden;
     box-sizing: border-box;
 }
-header {
-    width: 100%;
-    box-shadow: 2px 2px 8px;
-}
-header nav {
-   display: flex;
-}
-ul {
-    list-style:none;
-}
-header nav a:hover, header nav a:visited, header nav a:active {
-   text-decoration: none;
-   background: none;
-   color: inherit;
-}
-header nav .brand {
-   font-size: 30px;
-   margin: 25px 20px;
-   font-weight: bold;
-}
 main {
-   display: flex;
+    flex: 1;
 }
-main .banner {
-    background-color: #5DBCD2;
-}
-main .banner h2 {
-    margin-top: 60px;
-    text-align: center;
-    font-size: 34px;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 8px 8px 16px #111;
-}
-main .form-section {
+.column {
+    height: 100%;  /*allows both columns to span the full height of the browser window*/
     display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    align-items: center;
+    flex-direction: column;  /*places the left and right headers above the bottom content*/
 }
-main .form {
-    display: flex;
+#left {
+    flex-shrink: 0;  /*makes sure that content is not cut off in a smaller browser window*/
 }
-main .form label {
-    margin-bottom: 10px;
+
+.top-left {
+    flex-shrink: 0;
 }
-main .form input {
-    outline: 0;
+
+.top-right {
+    flex-shrink: 0;
+    display: inline-flex;
+}
+
+ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.bottom {
+    flex-grow: 1;  /*ensures that the container will take up the full height of the parent container*/
+    overflow-y: auto;  /*adds scroll to this container*/
 }
 footer {
     text-align: center;
