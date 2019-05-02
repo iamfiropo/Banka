@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 node_modules/
 .DS_Store
 .env
@@ -5,3 +6,6 @@ node_modules/
 /build
 /coverage
 *.log
+=======
+node_modules
+>>>>>>> gh-pages

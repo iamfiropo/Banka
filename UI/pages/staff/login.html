@@ -3,33 +3,34 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Staff Login | BANKA</title>
+        <title>Login | BANKA</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" media="screen" href="../../assets/css/style.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="../../assets/css/style.css"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="../../assets/css/login.css"/>
     </head>
     <body>
-        <header>
-            <a href="../index.html" class="header-brand"><h1>BANKA</h1></a>
-            <nav class="navbar">
-                <a href="#"><img src="../../assets/images/bank.svg" alt="nav icon"></a>
-            </nav>           
+        <header>            
+            <nav class="user-nav">
+                <a href="../index.html" class="brand">BANKA</a>
+            </nav>
         </header>
         <main>
-            <div class="container">
-                <section class="input-section">
-                        <h2>STAFF LOGIN</h2>
-                    <form class="input-form">
-                        <input type="email" class="email-address-input" placeholder="User name or email" required>
-                        <input type="password" placeholder="Password" required>
-                        <input type="submit" class="staff-login-btn" value="Continue">
-
-                        <p>Login as a user? <a href="../user/login.html">Login</a></p>                 
-                    </form>
-                </section>                
-            </div>
-
+            <section class="banner">
+            </section>
+            <section class="form-section">
+                <h2>LOGIN</h2>
+                <form class="form" action="dashboard.html">
+                    <label for="email-address-input">Email:</label>
+                    <input type="email" id="email-address-input" class="email-address-input" placeholder="Email address" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Password" required>   
+                    <label for="isAdmin">IsAdmin:</label>
+                    <input type="checkbox" class="isadmin" id="isAdmin">
+                    <input type="submit" class="login-btn" value="LOGIN">             
+                </form>
+            </section>
         </main>
-        <footer class="footer-section">
+        <footer>
             <p>&copy; 2019 BANKA - ADC Cycle 43</p>
         </footer>
     </body>
